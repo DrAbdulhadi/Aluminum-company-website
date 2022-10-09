@@ -1,0 +1,555 @@
+body {
+  background-color: #00073a;
+  padding: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NavBar style */
+.nav-style {
+  border-radius: 5px;
+  background-color: #ed4e24;
+  padding: 2px;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+}
+
+.cc-fluid {
+  margin-top: 1.5rem;
+}
+
+/* image style */
+/* page styles */
+.ax-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* carousel styles */
+.btnimg {
+  width: 20px;
+  height: 60px;
+}
+
+.nextbtn {
+  position: absolute;
+  right: 15%;
+  z-index: 1000;
+  float: right;
+  top: 180px;
+  background: transparent;
+  border: none;
+  rotate: -90deg;
+}
+
+.previousbtn {
+  position: absolute;
+  left: 15%;
+  z-index: 1000;
+  float: left;
+  top: 180px;
+  background: transparent;
+  border: none;
+  color: #f6a691;
+  rotate: 90deg;
+}
+
+.cc {
+  --cc-height: 400px;
+  --cc-width: 800px;
+  --cc-item-height: 150px;
+  --cc-item-width: 150px;
+}
+
+.cc-cont {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.cc-container {
+  align-items: center;
+  display: flex;
+  min-height: var(--cc-height);
+  margin: 0 auto;
+  max-width: var(--cc-width);
+  position: relative;
+}
+
+.cc-item {
+  height: var(--cc-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--cc-item-width);
+  z-index: 0;
+}
+
+.cc-item-1 {
+  left: 15%;
+  opacity: 0.4;
+  border-radius: 10%;
+  height: calc(var(--cc-item-height) * 0.8);
+  width: calc(var(--cc-item-width) * 1);
+}
+
+.cc-item-2,
+.cc-item-4 {
+  height: calc(var(--cc-item-height) * 1);
+  opacity: 1;
+  width: calc(var(--cc-item-width) * 1.5);
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.cc-item-2 {
+  left: 30%;
+  border-radius: 10%;
+}
+
+.cc-item-3 {
+  height: calc(var(--cc-item-height) * 1.5);
+  opacity: 1;
+  left: 50%;
+  width: calc(var(--cc-item-width) * 2);
+  z-index: 2;
+  border-radius: 10%;
+}
+
+.cc-item-4 {
+  left: 70%;
+  border-radius: 10%;
+}
+
+.cc-item-5 {
+  left: 85%;
+  opacity: 0.4;
+  border-radius: 10%;
+  height: calc(var(--cc-item-height) * 0.8);
+  width: calc(var(--cc-item-width) * 1);
+}
+
+.imgedet {
+  background-color: #ed4e24;
+  padding: 15px;
+  border-radius: 6px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 3rem;
+}
+
+/* ///////// */
+.scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 5px;
+  line-height: 1em;
+  height: 150px;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.capcc {
+  position: absolute;
+  top: 0px;
+  right: 29%;
+  width: 20%;
+  background-color: #ed4e24;
+  border-radius: 10px;
+  text-align: center;
+  height: 100%;
+}
+
+.carousel-item {
+  transition: none;
+}
+
+.capimg {
+  border-radius: 10px;
+  position: relative;
+  width: 20%;
+  height: 100%;
+  left: 29%;
+}
+
+.carousel-control-next-icon {
+  background-image: url('imgs/caret-down-solid-2.png');
+  rotate: -90deg;
+  height: 62px;
+  width: 20px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('imgs/caret-down-solid-2.png');
+  rotate: 90deg;
+  height: 62px;
+  width: 20px;
+}
+
+.carousel-control-prev {
+  opacity: unset;
+  width: fit-content;
+  left: 15%;
+}
+
+.carousel-control-next {
+  opacity: unset;
+  width: fit-content;
+  right: 15%;
+}
+
+
+/* //////////// */
+.map-loc-txt {
+  margin-top: 50px;
+}
+
+.map-txt {
+  background-color: #ed4e24;
+  padding: 15px;
+  border-radius: 6px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 220px;
+}
+
+.map-img {
+  margin-top: 50px;
+  position: absolute;
+  display: block;
+  margin-left: 22%;
+  width: 55%;
+  height: 185px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+h5 {
+  margin-bottom: 0;
+}
+
+/* Form style */
+
+
+.form-control::placeholder {
+  color: #f6a691;
+  float: right;
+}
+
+#contact-us p {
+  margin-bottom: 0;
+}
+
+.f-c {
+  background-color: #54597d;
+  border-radius: 10px;
+  padding: 10px;
+  width: 85%;
+}
+
+.input-things {
+  display: inline;
+}
+
+.form-control {
+  background-color: #ed4e24;
+  border: 0;
+  padding: 0.4rem;
+  outline-color: #ed4e24;
+}
+
+.col select {
+  outline: 0;
+  border: hidden;
+  background-color: #ed4e24;
+  color: #f6a691;
+  text-align: right;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("imgs/caret-down-solid.png");
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: 20px;
+}
+
+.col-text {
+  text-align: right;
+}
+
+.submit-button {
+  margin-top: 10px;
+  background-color: #ed4e24;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.submit-button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact-us {
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+}
+
+/* About company */
+.ab-style {
+  background-color: #ed4e24;
+  border-radius: 15px;
+  margin-bottom: 5rem;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Contact Us */
+.cu-style {
+  background-color: #54597d;
+  border-radius: 15px 15px 0 0;
+  z-index: 0;
+}
+
+.line {
+  margin-bottom: 2px;
+}
+
+.cu-style h3 {
+  margin-bottom: 0;
+  padding: 15px;
+}
+
+.icons {
+  width: 25px;
+  margin: auto 1% auto 1%;
+}
+
+.fuckbook {
+  width: 15px;
+  margin: auto 1% auto 1%;
+}
+
+.cp-con {
+  display: inline-block;
+}
+
+
+/*//////////////////////////All media/////////////////////////////////*/
+@media (max-width: 1400px) {
+  .scroll {
+    height: 130px;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .scroll {
+    height: 105px;
+  }
+
+}
+
+@media (max-width: 990px) {
+  .scroll {
+    height: 120px;
+  }
+
+  .capimg {
+    width: 30%;
+    left: 19%;
+  }
+
+  .capcc {
+    width: 30%;
+    right: 19%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .scroll {
+    height: 120px;
+  }
+
+  .capimg {
+    width: 40%;
+    left: 9%;
+  }
+
+  .capcc {
+    width: 40%;
+    right: 9%;
+  }
+
+  .carousel-control-next,
+  .nextbtn {
+    right: 5%;
+  }
+
+  .carousel-control-prev,
+  .previousbtn {
+    left: 5%;
+  }
+
+}
+@media (max-width:500px) {
+  .capimg {
+    width: 50%;
+    left: 0%;
+    height: 150px;
+  }
+
+  .capcc {
+    width: 50%;
+    right: 0%;
+    height: 150px;
+  }
+  
+}
+@media (max-width: 600px) {
+  .scroll {
+    height: 6rem;
+  }
+  .map-img {
+    width: 66%;
+    margin-left: 18%;
+  }
+
+  .previousbtn {
+    top: 120px;
+    left: 5%;
+  }
+
+  .nextbtn {
+    top: 120px;
+    right: 5%;
+  }
+
+  .carousel-control-prev {
+    left: 5%;
+  }
+
+  .carousel-control-next {
+    right: 5%;
+  }
+
+  #my-sol2 .ism-button-prev {
+    left: 4%;
+  }
+
+  #my-sol2 .ism-button-next {
+    right: 4%;
+  }
+
+  .justify-content-evenly {
+    font-size: small;
+  }
+
+  .cu-style .text-end {
+    font-size: small;
+  }
+
+  #contact-us h3 {
+    font-size: medium;
+  }
+
+  .cc-container {
+    align-items: center;
+    display: flex;
+    min-height: 300px;
+    margin: 0 auto;
+    max-width: var(--cc-width);
+    position: relative;
+  }
+
+  .cc-fluid {
+    margin-top: 2rem;
+  }
+
+  .cc-item-2,
+  .cc-item-4 {
+    height: calc(var(--cc-item-height) * 0.8);
+    opacity: 1;
+    width: calc(var(--cc-item-width) * 1);
+    z-index: 1;
+    border-radius: 10%;
+  }
+
+  .cc-item-3 {
+    height: calc(var(--cc-item-height) * 1);
+    opacity: 1;
+    left: 50%;
+    width: calc(var(--cc-item-width) * 1.5);
+    z-index: 2;
+    border-radius: 10%;
+  }
+
+  .cc-item-1 {
+    left: 15%;
+    opacity: 0.4;
+    border-radius: 10%;
+    width: calc(var(--cc-item-width) * 0.5);
+    height: calc(var(--cc-item-height) * 0.5);
+  }
+
+  .cc-item-5 {
+    left: 85%;
+    opacity: 0.4;
+    border-radius: 10%;
+    width: calc(var(--cc-item-width) * 0.5);
+    height: calc(var(--cc-item-height) * 0.5);
+  }
+
+  .imgedet h5 {
+    font-size: small;
+  }
+
+  .map-txt h5 {
+    font-size: small;
+  }
+}
+
+@media (min-width: 600px) {
+  #contact-us p {
+    font-size: 25px;
+  }
+
+  .nav-style .container-fluid {
+    margin: auto 2rem;
+  }
+}
+
+@media (max-width:400px) {
+  .imgedet h5 {
+    font-size: x-small;
+  }
+
+  .map-txt h5 {
+    font-size: x-small;
+  }
+
+  .capimg {
+    width: 50%;
+    left: 0%;
+    height: 150px;
+  }
+
+  .capcc {
+    width: 50%;
+    right: 0%;
+    height: 150px;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .links {
+    font-size: small;
+  }
+}
