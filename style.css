@@ -240,7 +240,7 @@ h5 {
   float: right;
 }
 
-#contact-us p {
+#form-contact p {
   margin-bottom: 0;
 }
 
@@ -295,7 +295,7 @@ h5 {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#contact-us {
+#form-contact {
   margin-top: 5rem;
   margin-bottom: 20rem;
 }
@@ -455,7 +455,7 @@ h5 {
     font-size: small;
   }
 
-  #contact-us h3 {
+  #form-contact h3 {
     font-size: medium;
   }
 
@@ -516,7 +516,7 @@ h5 {
 }
 
 @media (min-width: 600px) {
-  #contact-us p {
+  #form-contact p {
     font-size: 25px;
   }
 
