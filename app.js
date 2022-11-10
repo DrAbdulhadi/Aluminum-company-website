@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const fs = require('fs');
 const path = require('path');
 const mongoose = require("mongoose");
+const PORT = process.env.PORT || 5000;
 require('dotenv/config')
 
 const app = express();
@@ -179,7 +180,4 @@ app.post("/callOrders", function (req, res)
 
 
 //$          Listening Port         //
-app.listen(process.env.PORT || 3000, function ()
-{
-    console.log("Server Started on port 3000")
-});
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
