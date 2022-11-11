@@ -413,7 +413,6 @@ h5 {
     right: 9%;
     height: 150px;
   }
-  
 }
 @media (max-width: 600px) {
   .scroll {
@@ -512,9 +511,8 @@ h5 {
   .imgedet h5 {
     font-size: 3vw;
   }
-
   .map-txt h5 {
-    font-size: 3vw;
+    font-size: 2.9vw;
   }
 }
 
@@ -525,6 +523,9 @@ h5 {
 
   .nav-style .container-fluid {
     margin: auto 2rem;
+  }
+  .map-txt h5 {
+    font-size: 20px;
   }
 }
 
@@ -554,5 +555,8 @@ h5 {
 @media (max-width: 300px) {
   .links {
     font-size: small;
+  }
+  .map-txt h5 {
+    font-size: 2.4vw;
   }
 }
