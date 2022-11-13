@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleOrders.css">
+    <link rel="stylesheet" href="/styleOrders.css">
     <title>Document</title>
 </head>
 <body>
       
-   
+   <table>
+
         <tr>
             <th>Customer</th>
             <th>Telephone</th>
             <th>Address</th>
         </tr>
+        <% orders.forEach(element => { %>
+            <tr>
+                <td><%=element.user.name%></td>
+                <td><%=element.user.address%></td>
+                <td><%=element.user.phoneNumber%></td>
+            </tr>
+            <% }) %>
+
+    </table>
+
         <% orders.forEach(element => { %>
         <ol>
             <li><%=element.user.name%></li>
@@ -26,9 +37,7 @@
             <li><%=element.user.upSide%></li>
         </ol>
 
-    
-    
-     
+
      <% }) %>
                               
     

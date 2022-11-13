@@ -30,6 +30,7 @@ body {
 .btnimg {
   width: 20px;
   height: 60px;
+  filter: drop-shadow(0px 0px 2px #000);
 }
 
 .nextbtn {
@@ -194,15 +195,17 @@ body {
   opacity: unset;
   width: fit-content;
   left: 15%;
+  filter: drop-shadow(0px 0px 2px #000);
+  z-index: 10;
 }
 
 .carousel-control-next {
   opacity: unset;
   width: fit-content;
   right: 15%;
+  filter: drop-shadow(0px 0px 2px #000);
+  z-index: 10;
 }
-
-
 /* //////////// */
 .map-loc-txt {
   margin-top: 50px;
@@ -233,14 +236,21 @@ h5 {
 }
 
 /* Form style */
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 .form-control::placeholder {
   color: #f6a691;
   float: right;
 }
 
-#contact-us p {
+#form-contact p {
   margin-bottom: 0;
 }
 
@@ -295,9 +305,9 @@ h5 {
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#contact-us {
+#form-contact {
   margin-top: 5rem;
-  margin-bottom: 20rem;
+  margin-bottom: 5rem;
 }
 
 /* About company */
@@ -307,8 +317,14 @@ h5 {
   margin-bottom: 5rem;
   width: 80%;
   padding: 20px;
+  margin-top: 5rem;
 }
-
+/* comments */
+.comments div img{
+  width: 90%;
+  height: 100px;
+  border-radius: 10px;
+}
 /* Contact Us */
 .cu-style {
   background-color: #54597d;
@@ -400,17 +416,16 @@ h5 {
 }
 @media (max-width:500px) {
   .capimg {
-    width: 50%;
-    left: 0%;
+    width: 40%;
+    left: 9%;
     height: 150px;
   }
 
   .capcc {
-    width: 50%;
-    right: 0%;
+    width: 40%;
+    right: 9%;
     height: 150px;
   }
-  
 }
 @media (max-width: 600px) {
   .scroll {
@@ -455,7 +470,7 @@ h5 {
     font-size: small;
   }
 
-  #contact-us h3 {
+  #form-contact h3 {
     font-size: medium;
   }
 
@@ -507,27 +522,29 @@ h5 {
   }
 
   .imgedet h5 {
-    font-size: small;
+    font-size: 3vw;
   }
-
   .map-txt h5 {
-    font-size: small;
+    font-size: 2.9vw;
   }
 }
 
 @media (min-width: 600px) {
-  #contact-us p {
+  #form-contact p {
     font-size: 25px;
   }
 
   .nav-style .container-fluid {
     margin: auto 2rem;
   }
+  .map-txt h5 {
+    font-size: 20px;
+  }
 }
 
 @media (max-width:400px) {
   .imgedet h5 {
-    font-size: x-small;
+    font-size: 3vw;
   }
 
   .map-txt h5 {
@@ -535,14 +552,14 @@ h5 {
   }
 
   .capimg {
-    width: 50%;
-    left: 0%;
+    width: 45%;
+    left: 4%;
     height: 150px;
   }
 
   .capcc {
-    width: 50%;
-    right: 0%;
+    width: 45%;
+    right: 4%;
     height: 150px;
   }
 
@@ -551,5 +568,8 @@ h5 {
 @media (max-width: 300px) {
   .links {
     font-size: small;
+  }
+  .map-txt h5 {
+    font-size: 2.4vw;
   }
 }
