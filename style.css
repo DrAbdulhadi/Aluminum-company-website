@@ -2,7 +2,12 @@ body {
   background-color: #00073a;
   padding: 0;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans Arabic', sans-serif;
+}
+h5{
+  font-family: hobo-std,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* NavBar style */
@@ -225,8 +230,8 @@ body {
   margin-top: 50px;
   position: absolute;
   display: block;
-  margin-left: 22%;
-  width: 55%;
+  width: 70%;
+  margin-left: 13%;
   height: 185px;
   border-radius: 15px;
   z-index: -1;
@@ -299,7 +304,7 @@ input[type=number] {
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .submit-button:hover {
@@ -325,9 +330,10 @@ input[type=number] {
 /* comments */
 .comments div img {
   width: 90%;
-  height: auto;
+  height: 100px;
   border-radius: 10px;
 }
+
 .ccolumn {
   float: left;
   width: 50%;
@@ -345,6 +351,7 @@ input[type=number] {
   background-color: #54597d;
   border-radius: 15px 15px 0 0;
   z-index: 0;
+  margin: none;
 }
 
 .line {
@@ -362,12 +369,18 @@ input[type=number] {
 }
 
 .fuckbook {
-  width: 15px;
+  width: 25px;
   margin: auto 1% auto 1%;
 }
 
 .cp-con {
   display: inline-block;
+}
+.copyrightimg{
+  width: 15px;
+}
+.numberss{
+  font-size: 1.2vw;
 }
 
 
@@ -375,6 +388,9 @@ input[type=number] {
 @media (max-width: 1400px) {
   .scroll {
     height: 130px;
+  }
+  .numberss{
+    font-size: 2vw;
   }
 
 }
@@ -434,6 +450,9 @@ input[type=number] {
   .ccolumn {
     width: 100%;
   }
+  .numberss{
+    font-size: 3vw;
+  }
   .capimg {
     width: 40%;
     left: 9%;
@@ -445,16 +464,14 @@ input[type=number] {
     right: 9%;
     height: 150px;
   }
+  .justify-content-evenly{
+    font-size: 2.5vw;
+  }
 }
 
 @media (max-width: 600px) {
   .scroll {
     height: 6rem;
-  }
-
-  .map-img {
-    width: 66%;
-    margin-left: 18%;
   }
 
   .previousbtn {
@@ -481,14 +498,6 @@ input[type=number] {
 
   #my-sol2 .ism-button-next {
     right: 4%;
-  }
-
-  .justify-content-evenly {
-    font-size: small;
-  }
-
-  .cu-style .text-end {
-    font-size: small;
   }
 
   #form-contact h3 {
@@ -596,4 +605,12 @@ input[type=number] {
   .map-txt h5 {
     font-size: 2.4vw;
   }
+}
+
+@media (min-width:900px) {
+  .map-img {
+    width: 50%;
+    margin-left: 24%;
+  }
+
 }
