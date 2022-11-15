@@ -136,7 +136,6 @@ body {
   background-color: #ed4e24;
   padding: 15px;
   border-radius: 6px;
-  width: 38%;
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 3rem;
@@ -147,7 +146,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   padding: 5px;
-  line-height: 20px;
+  line-height: 1em;
   height: 150px;
 }
 
@@ -207,7 +206,6 @@ body {
   filter: drop-shadow(0px 0px 2px #000);
   z-index: 10;
 }
-
 /* //////////// */
 .map-loc-txt {
   margin-top: 50px;
@@ -216,9 +214,8 @@ body {
 .map-txt {
   background-color: #ed4e24;
   padding: 15px;
-  width: 35%;
   border-radius: 6px;
-  margin-left: 32%;
+  margin-left: 35%;
   margin-right: 35%;
   margin-top: 220px;
 }
@@ -228,14 +225,13 @@ body {
   position: absolute;
   display: block;
   margin-left: 22%;
-  width: 50%;
+  width: 55%;
   height: 185px;
   border-radius: 15px;
   z-index: -1;
 }
 
 h5 {
-  font-size: calc(1.3rem + .4vw);
   margin-bottom: 0;
 }
 
@@ -245,7 +241,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 input[type=number] {
   -moz-appearance: textfield;
 }
@@ -324,25 +319,12 @@ input[type=number] {
   padding: 20px;
   margin-top: 5rem;
 }
-
 /* comments */
-.comments div img {
+.comments div img{
   width: 90%;
-  height: auto;
+  height: 100px;
   border-radius: 10px;
 }
-.ccolumn {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-.crow::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* Contact Us */
 .cu-style {
   background-color: #54597d;
@@ -432,11 +414,7 @@ input[type=number] {
   }
 
 }
-
 @media (max-width:500px) {
-  .ccolumn {
-    width: 100%;
-  }
   .capimg {
     width: 40%;
     left: 9%;
@@ -449,15 +427,13 @@ input[type=number] {
     height: 150px;
   }
 }
-
 @media (max-width: 600px) {
   .scroll {
     height: 6rem;
   }
-
   .map-img {
     width: 66%;
-    margin-left: 15%;
+    margin-left: 18%;
   }
 
   .previousbtn {
@@ -548,7 +524,6 @@ input[type=number] {
   .imgedet h5 {
     font-size: 3vw;
   }
-
   .map-txt h5 {
     font-size: 2.9vw;
   }
@@ -562,7 +537,6 @@ input[type=number] {
   .nav-style .container-fluid {
     margin: auto 2rem;
   }
-
   .map-txt h5 {
     font-size: 20px;
   }
@@ -595,7 +569,6 @@ input[type=number] {
   .links {
     font-size: small;
   }
-
   .map-txt h5 {
     font-size: 2.4vw;
   }

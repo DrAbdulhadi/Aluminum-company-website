@@ -93,5 +93,5 @@ document.querySelector(".nextbtn").addEventListener("click", function (e) {
 document.querySelector(".previousbtn").addEventListener("click", function (e) {
   exampleCarousel.previouss();
 });
-setInterval(function(){exampleCarousel.nextt();},2020)
+setInterval(function(){exampleCarousel.nextt();},3320)
 // ---------------------
