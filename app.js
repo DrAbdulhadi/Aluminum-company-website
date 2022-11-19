@@ -26,8 +26,9 @@ const databaseSchema = new mongoose.Schema({
          address: String,
          phoneNumber: Number,
          length: String,
-         kitchenType: String ,
-         upSide: Boolean ,
+         kitchenType: String,
+         topLength: String,
+         bottomLength:String,
     }
         
 });
@@ -107,6 +108,7 @@ mongoose.connect(process.env.MONGO_URL, {
 });
 
 
+//$         GET & POST Requests     //
 
 app.get("/", function (req, res)
 {
@@ -133,34 +135,32 @@ app.post("/callOrders", function (req, res)
 {
     let date = new Date();
     let name = req.body.name;
-    let phone = req.body.phone;
+    let phone = req.body.telephone;
     let address = req.body.address;
-    let length = req.body.length;
-    let top = req.body.top;
-    let type = req.body.type
+    let bottomLength = req.body.bottomLength;
+    let topLength = req.body.topLength;
+    let type = req.body.type;
     
-    // console.log(req.body, type);
+    console.log(req.body, type);
     // Alitimad.find({},function (err,obj) {
     //     console.log(obj);
     // })
     var registerOrder = new Alitimad({
         user: {
-            
             date: date,
             name: name   ,
              address: address,
              phoneNumber: phone,
-             length: length,
+             bottomLength: bottomLength,
+             topLength: topLength,
              kitchenType: type ,
-             upSide: true ,
         }
     })
     registerOrder.save();
-    setTimeout(() => res.redirect("/"), 2660);
+    setTimeout(() => res.redirect("/"), 2360);
 });
 
 
-//$         GET & POST Requests     //
 // app.get("/main", function (req, res)
 // {
 //     res.render("index.html")

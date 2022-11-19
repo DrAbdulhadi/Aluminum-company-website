@@ -15,30 +15,22 @@
             <th>Customer</th>
             <th>Telephone</th>
             <th>Address</th>
+            <th>kitchenType</th>
+            <th>Bottom Length</th>
+            <th>Top Length</th>
         </tr>
         <% orders.forEach(element => { %>
             <tr>
                 <td><%=element.user.name%></td>
                 <td><%=element.user.address%></td>
                 <td><%=element.user.phoneNumber%></td>
+                <td><%=element.user.kitchenType%></td>
+                <td><%=element.user.bottomLength%></td>
+                <td><%=element.user.topLength%></td>
             </tr>
             <% }) %>
 
     </table>
-
-        <% orders.forEach(element => { %>
-        <ol>
-            <li><%=element.user.name%></li>
-            <li><%=element.user.date%></li>
-            <li><%=element.user.address%></li>
-            <li><%=element.user.phoneNumber%></li>
-            <li><%=element.user.kitchenType%></li>
-            <li><%=element.user.length%></li>
-            <li><%=element.user.upSide%></li>
-        </ol>
-
-
-     <% }) %>
                               
     
     

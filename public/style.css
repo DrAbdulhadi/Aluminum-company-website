@@ -2,7 +2,7 @@ body {
   background-color: #00073a;
   padding: 0;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Noto Sans Arabic', sans-serif;
 }
 
 /* NavBar style */
@@ -136,7 +136,6 @@ body {
   background-color: #ed4e24;
   padding: 15px;
   border-radius: 6px;
-  width: 38%;
   margin-left: 30%;
   margin-right: 30%;
   margin-top: 3rem;
@@ -210,36 +209,39 @@ body {
 
 /* //////////// */
 .map-loc-txt {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .map-txt {
+  z-index: 2;
   background-color: #ed4e24;
   padding: 15px;
-  width: 35%;
   border-radius: 6px;
+  width: 38%;
   margin-left: 32%;
   margin-right: 35%;
-  margin-top: 220px;
+  margin-top: -10px;
+  position: absolute;
 }
 
 .map-img {
   margin-top: 50px;
-  position: absolute;
-  display: block;
-  margin-left: 22%;
-  width: 50%;
-  height: 185px;
-  border-radius: 15px;
-  z-index: -1;
+    position: relative;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    height: 225px;
+    border-radius: 15px;
 }
 
 h5 {
-  font-size: calc(1.3rem + .4vw);
   margin-bottom: 0;
 }
 
 /* Form style */
+input{
+  text-align: right;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -302,7 +304,7 @@ input[type=number] {
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .submit-button:hover {
@@ -327,10 +329,11 @@ input[type=number] {
 
 /* comments */
 .comments div img {
-  width: 90%;
-  height: auto;
+  width: 80%;
+  height: 100px;
   border-radius: 10px;
 }
+
 .ccolumn {
   float: left;
   width: 50%;
@@ -348,6 +351,7 @@ input[type=number] {
   background-color: #54597d;
   border-radius: 15px 15px 0 0;
   z-index: 0;
+  margin: none;
 }
 
 .line {
@@ -365,19 +369,36 @@ input[type=number] {
 }
 
 .fuckbook {
-  width: 15px;
+  width: 25px;
   margin: auto 1% auto 1%;
 }
 
 .cp-con {
   display: inline-block;
 }
-
+.copyrightimg{
+  width: 15px;
+}
+.numberss{
+  font-size: 1.1vw;
+}
+.comment-txt{
+  
+  background-color: #ed4e24;
+  padding: 15px;
+  border-radius: 6px;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 10px;
+}
 
 /*//////////////////////////All media/////////////////////////////////*/
 @media (max-width: 1400px) {
   .scroll {
     height: 130px;
+  }
+  .numberss{
+    font-size: 1.5vw;
   }
 
 }
@@ -402,6 +423,9 @@ input[type=number] {
   .capcc {
     width: 30%;
     right: 19%;
+  }
+  .numberss{
+    font-size: 1.8vw;
   }
 
 }
@@ -437,6 +461,9 @@ input[type=number] {
   .ccolumn {
     width: 100%;
   }
+  .numberss{
+    font-size: 3vw;
+  }w
   .capimg {
     width: 40%;
     left: 9%;
@@ -448,16 +475,14 @@ input[type=number] {
     right: 9%;
     height: 150px;
   }
+  .justify-content-evenly{
+    font-size: 2.5vw;
+  }
 }
 
 @media (max-width: 600px) {
   .scroll {
     height: 6rem;
-  }
-
-  .map-img {
-    width: 66%;
-    margin-left: 15%;
   }
 
   .previousbtn {
@@ -484,14 +509,6 @@ input[type=number] {
 
   #my-sol2 .ism-button-next {
     right: 4%;
-  }
-
-  .justify-content-evenly {
-    font-size: small;
-  }
-
-  .cu-style .text-end {
-    font-size: small;
   }
 
   #form-contact h3 {
@@ -546,11 +563,11 @@ input[type=number] {
   }
 
   .imgedet h5 {
-    font-size: 3vw;
+    font-size: medium;
   }
 
-  .map-txt h5 {
-    font-size: 2.9vw;
+  .map-txt h5,.comment-txt h5 {
+    font-size: medium;
   }
 }
 
@@ -563,18 +580,18 @@ input[type=number] {
     margin: auto 2rem;
   }
 
-  .map-txt h5 {
+  .map-txt h5, .comment-txt h5 {
     font-size: 20px;
   }
 }
 
 @media (max-width:400px) {
   .imgedet h5 {
-    font-size: 3vw;
+    font-size: medium;
   }
 
-  .map-txt h5 {
-    font-size: x-small;
+  .map-txt h5, .comment-txt h5 {
+    font-size: medium;
   }
 
   .capimg {
@@ -596,7 +613,15 @@ input[type=number] {
     font-size: small;
   }
 
-  .map-txt h5 {
+  .map-txt h5, .comment-txt h5 {
     font-size: 2.4vw;
   }
+}
+
+@media (min-width:900px) {
+  .map-img {
+    width: 50%;
+    margin-left: 24%;
+  }
+
 }
